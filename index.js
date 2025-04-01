@@ -1,6 +1,7 @@
 import LinkedList from "./linkedList/LinkedList.js";
-import { isPalindrome } from "./linkedList/palindromeLinkedList.js";
+import { isPalindrome } from "./linkedList/exercises/palindromeLinkedList.js";
 
+//Try your code here
 function main() {
     let linkedList = new LinkedList();
     let linkedList2 = new LinkedList();
