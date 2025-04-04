@@ -1,21 +1,17 @@
-import LinkedList from "./linkedList/LinkedList.js";
-import { isPalindrome } from "./linkedList/exercises/palindromeLinkedList.js";
+import { BinarySearchTree } from "./datastructures/binarySearchTree/bst.js";
 
 //Try your code here
 function main() {
-    let linkedList = new LinkedList();
-    let linkedList2 = new LinkedList();
-
-    linkedList.addTop(1);
-    linkedList.addTop(2);
-    linkedList.addTop(2);
-    linkedList.addTop(1);
-    
-    linkedList2.addTop(2);
-    linkedList2.addTop(1);
-
-   console.log(isPalindrome(linkedList.head));
-   console.log(isPalindrome(linkedList2.head));
+    let bst = new BinarySearchTree();
+    bst.insert(10);
+    bst.insert(5);
+    bst.insert(15);
+    bst.insert(3);
+    bst.insert(7);
+    bst.insert(14);
+    bst.insert(17);
+    console.log(bst.min(bst.root));
+    console.log(bst.max(bst.root));
 }
 
 main();
